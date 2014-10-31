@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+ 
+    <bean id="module1" class="pl.wedjaa.tutorials.examples.config.Module1Bean" >
+        <property name="property1" value="${config.module1.property1:defaultvalue1}" />
+        <property name="property2" value="${config.module1.property2:defaultvalue2}" />
+        <property name="property3" value="${config.module1.property3:defaultvalue3}" />
+        <property name="tmpFolder" value="${config.module1.tmpfolder:file:${java.io.tmpdir}}" />
+        <property name="fileName" value="${config.module1.filename:default.dat}" />
+        <property name="serverUrl" value="${config.module1.serverurl:null}" />
+    </bean>
+
+</beans>
