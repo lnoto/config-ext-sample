@@ -39,19 +39,6 @@
                 </bean>
             </list>
         </property>
-    </bean>
-    
-<!--    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource"
-          p:basenames="messages" />-->
-    
-    <!-- Declare the Interceptor -->
-<!--    <mvc:interceptors>    
-        <bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor"
-              p:paramName="locale" />
-    </mvc:interceptors>-->
-    
-    <!-- Declare the Resolver -->
-    <!--<bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver" />-->
    
     <import resource="classpath:modules-context.xml"/>
 
