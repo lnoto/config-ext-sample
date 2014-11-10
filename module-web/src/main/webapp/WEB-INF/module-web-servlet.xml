@@ -39,6 +39,7 @@
                 </bean>
             </list>
         </property>
+    </bean>
    
     <import resource="classpath:modules-context.xml"/>
 
